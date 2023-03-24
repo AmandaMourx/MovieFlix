@@ -1,4 +1,3 @@
-/*
 body{
     margin: 0;
 }
@@ -22,7 +21,7 @@ body{
     width: 40%;
 }
 
-input{
+.login--input{
     display: block;
     background-color: rgba(0 ,0 , 0,0);
     height: 25px;
@@ -58,12 +57,12 @@ input:focus {
     display: i;
 }
 
-h2{
+.title{
     margin-top: 1%;
     margin-bottom: 7%; 
 }
 
-button{
+.login--button{
     background-color: transparent;
     border: 1.5px solid #FFFFFF;
     padding: 3px 8px 2px 8px;
@@ -83,6 +82,10 @@ button:hover{
 }
 
 .login--button{
-    margin-top: 7%;
+    margin-top: 3%;
 }
-*/
+
+.login--enter{
+    margin-top: 2%;
+    margin-bottom: 3%;
+}

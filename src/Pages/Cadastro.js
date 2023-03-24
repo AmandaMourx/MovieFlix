@@ -7,7 +7,7 @@ export default function Cadastro() {
     <div className='login--page'>
     <div className='login--container'>
         <h2>Criar conta</h2>
-        <input type="text" placeholder='E-mail'></input>
+        <input className='login--input' type="text" placeholder='E-mail'></input>
         <input className='login--input' type="text" placeholder='Nome de usuário'></input>
         <input className='login--input' type="password" placeholder='Senha'></input>
         <input className='login--input' type="password" placeholder='Confirme sua senha'></input>
