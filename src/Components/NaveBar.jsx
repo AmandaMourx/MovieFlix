@@ -1,8 +1,9 @@
 import { React } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./NaveBar.css";
 import Button from "@mui/material/Button";
 import SearchAppBar from './SearchBar';
+import Login from '../Pages/Login';
 
 export default function NaveBar() {
   return (
@@ -18,7 +19,7 @@ export default function NaveBar() {
       <div className="search">
           <SearchAppBar/>
       </div>
-      <Button
+      <Link to="Login"><Button
         className="login_button"
         style={{
           borderWidth: "3px",
@@ -32,7 +33,10 @@ export default function NaveBar() {
         variant="outlined"
       >
         LOGIN
-      </Button>
+      </Button></Link>
+      <Routes>
+        <Route path="Login" component={Login}></Route>
+      </Routes>
     </nav>
   );
 }
