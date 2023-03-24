@@ -3,8 +3,7 @@ import Tmdb from '../Tmdb';
 import React, {useEffect, useState} from 'react';
 import MovieRow from '../Components/movieRow';
 import NaveBar from '../Components/NaveBar';
-import Login from './Login';
-import {Routes,Route,Link} from 'react-router-dom';
+
 
 function App() {
   
@@ -24,13 +23,7 @@ function App() {
   
   return (
     <div className='home-page'>
-    <header><Link to="Login"><button>Entrar</button></Link></header>
-      <section className="lists">
-      <main>
-        <Routes>
-          <Route path="Login" component={Login}/>
-        </Routes>
-      </main>
+    
       <NaveBar fullwidth/>
       <section className="lists">
         {movieList.map((item, key) => (
