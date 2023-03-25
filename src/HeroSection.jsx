@@ -1,5 +1,5 @@
 import React from 'react'
-import './HeroSection.css'
+import '../Styles/HeroSection.css'
 import home_image from '../images/home_image.png'
 
 export default function Hero() {
