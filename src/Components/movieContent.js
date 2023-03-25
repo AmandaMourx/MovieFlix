@@ -1,5 +1,5 @@
 import React from 'react'
-import './movieContent.css'
+import '../Styles/movieContent.css'
 import CommentIcon from '@material-ui/icons/Comment';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
