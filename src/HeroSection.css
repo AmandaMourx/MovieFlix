@@ -1,0 +1,46 @@
+.title {
+  font-style: bold;
+  font-weight: 700;
+  font-family: "Climate Crisis", cursive;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 80px;
+  line-height: 97px;
+
+  color: #ffffff;
+  padding: 15% 5% 5%;
+}
+
+.subtitle {
+  font-family: "Climate Crisis", cursive;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36.31px;
+  padding: 0% 5% 0%;
+  width: fit-content;
+  text-align: left;
+  margin-top: -12%;
+}
+
+.subtitle2 {
+  font-family: "Climate Crisis", cursive;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36.31px;
+  padding: 0% 5% 0%;
+  width: fit-content;
+  text-align: left;
+}
+
+.home_image {
+  position: absolute;
+  width: 659px;
+  height: 460px;
+  right:0%;
+  left: 47%;
+  top: 15%;
+  align-content: center;
+}
