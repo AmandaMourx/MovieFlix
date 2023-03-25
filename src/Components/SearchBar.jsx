@@ -3,7 +3,7 @@ import { styled, alpha } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import InputBase from '@mui/material/InputBase';
-import SearchIcon from '@mui/icons-material/Search';
+import SearchIcon from '@material-ui/icons/Search';;
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
