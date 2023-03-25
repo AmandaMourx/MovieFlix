@@ -4,7 +4,7 @@ import NavigateNextIcon from '@material-ui/icons/NavigateNext'
 import Modal from "react-modal";
 import MovieContent from "./movieContent.js"
 import CancelIcon from '@material-ui/icons/Cancel';
-import './movieRow.css';
+import '../Styles/movieRow.css';
 
 export default ({title, items}) => {
     const [scrollx, setScrollx] = useState(0)
