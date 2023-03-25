@@ -3,6 +3,7 @@ import { BrowserRouter as Routes, Route, Link } from "react-router-dom";
 import "../Styles/NaveBar.css";
 import Button from "@mui/material/Button";
 import SearchAppBar from "./SearchBar";
+import Login from '../Pages/Login';
 
 export default function NaveBar() {
   return (
