@@ -1,6 +1,6 @@
 import React from 'react'
 import { Routes,Route,Link } from 'react-router-dom'
-import './Login.css'
+import '../Styles/Login.css'
 import Cadastro from './Cadastro';
 
 export default function Login() {
