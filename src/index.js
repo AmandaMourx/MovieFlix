@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client';
 import App from './Pages/App';
 import Login from './Pages/Login';
 import Cadastro from './Pages/Cadastro';
-import Perfil from './Pages/MeuPerfil'
+import MeuPerfil from './Pages/MeuPerfil'
 import Postagens from './Pages/Postagens';
 
-import Movies_Action from './Pages/Movies_Action';
-import Movies_Horror from './Pages/Movies_Horror';
-import Movies_Comedy from './Pages/Movies_Comedy';
+import MoviesAction from './Pages/MoviesAction';
+import MoviesHorror from './Pages/MoviesHorror';
+import MoviesComedy from './Pages/MoviesComedy';
 
 // 1 - configurando o router
 import{
@@ -21,31 +21,31 @@ const router = createBrowserRouter([
     element: <App />
   },
   {
-    path: '/Movies_Action',
-    element: <Movies_Action />
+    path: '/MoviesAction',
+    element: <MoviesAction />
   },
   {
-    path: '/Movies_Horror',
-    element: <Movies_Horror />
+    path: '/MoviesHorror',
+    element: <MoviesHorror />
   },
   {
-    path: '/Movies_Comedy',
-    element: <Movies_Comedy />
+    path: '/MoviesComedy',
+    element: <MoviesComedy />
   },
   {
-    path: 'login',
+    path: '/login',
     element: <Login />
   },
   {
-    path: 'cadastro',
+    path: '/cadastro',
     element: <Cadastro />
   },
   {
-    path: 'meu-perfil',
-    element: <Perfil />
+    path: '/meu-perfil',
+    element: <MeuPerfil />
   },
   {
-    path: 'postagens',
+    path: '/postagens',
     element: <Postagens />
   },
 ])
