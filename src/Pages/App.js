@@ -3,7 +3,9 @@ import Tmdb from '../Tmdb';
 import React, {useEffect, useState} from 'react';
 import MovieRow from '../Components/movieRow';
 import NaveBar from '../Components/NaveBar';
-
+import Hero from '../Components/HeroSection';
+import '../Styles/HeroSection.css'
+import { Outlet } from 'react-router-dom';
 
 function App() {
   
@@ -23,8 +25,9 @@ function App() {
   
   return (
     <div className='home-page'>
-    
       <NaveBar fullwidth/>
+      <Outlet/>
+      <Hero/>
       <section className="lists">
         {movieList.map((item, key) => (
           <MovieRow key={key} title={item.title} items={item.items}/>
