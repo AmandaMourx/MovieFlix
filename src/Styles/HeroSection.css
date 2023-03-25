@@ -36,11 +36,6 @@
 }
 
 .home_image {
-  position: absolute;
-  width: 659px;
-  height: 460px;
-  right:0%;
-  left: 47%;
-  top: 15%;
-  align-content: center;
+  transform: translateY(-25em);
+  scale:calc(0.6);
 }
