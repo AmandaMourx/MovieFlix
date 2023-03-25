@@ -1,6 +1,6 @@
 import React from 'react'
-import './Login.css'
-import './Login.css'
+import '../Styles/Login.css'
+import '../Styles/Login.css'
 
 export default function Cadastro() {
   return (
