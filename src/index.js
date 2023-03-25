@@ -13,25 +13,28 @@ import{
 
 const router = createBrowserRouter([
   {
-    path: 'login',
-    element: <Login />
-  },
-  {
     path: '/',
-    element: <App />
+    element: <App />,
+    children: [
+      {
+        path: 'login',
+        element: <Login />
+      },
+      {
+        path: 'cadastro',
+        element: <Cadastro />
+      },
+      {
+        path: 'meu-perfil',
+        element: <Perfil />
+      },
+      {
+        path: 'postagens',
+        element: <Postagens />
+      },
+    ]
   },
-  {
-    path: 'cadastro',
-    element: <Cadastro />
-  },
-  {
-    path: 'meu-perfil',
-    element: <Perfil />
-  },
-  {
-    path: 'postagens',
-    element: <Postagens />
-  }
+  
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
