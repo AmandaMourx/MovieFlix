@@ -1,9 +1,11 @@
 import { Fragment, React } from "react";
-import { BrowserRouter as Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
+import "../Styles/NaveBar.css";
+import Button from "@mui/material/Button";import { Fragment, React } from "react";
+import { BrowserRouter as Link } from "react-router-dom";
 import "../Styles/NaveBar.css";
 import Button from "@mui/material/Button";
 import SearchAppBar from "./SearchBar";
-import Login from '../Pages/Login';
 
 export default function NaveBar() {
   return (
@@ -14,15 +16,15 @@ export default function NaveBar() {
         </Link>
         <div class="links">
           <ul class="categories">
-            <Link to='Movies_Action' style={{ color: "#fff", marginRight: '20%', textDecoration: 'none'}}><li>Ação</li></Link>
-            <Link to='Movies_Horror' style={{ color: '#fff', marginRight: '20%', textDecoration: 'none'}}><li>Terror</li></Link>
-            <Link to='Movies_Comedy' style={{ color: '#fff', marginRight: '20%', textDecoration: 'none'}}><li>Comédia</li></Link>
+            <Link to='MoviesAction' style={{ color: "#fff", marginRight: '20%', textDecoration: 'none'}}><li>Ação</li></Link>
+            <Link to='MoviesHorror' style={{ color: '#fff', marginRight: '20%', textDecoration: 'none'}}><li>Terror</li></Link>
+            <Link to='MoviesComedy' style={{ color: '#fff', marginRight: '20%', textDecoration: 'none'}}><li>Comédia</li></Link>
           </ul>
         </div>
         <div className="search">
           <SearchAppBar />
         </div>
-        <Link to="Login"><Button
+        <Link to="login" style={{ textDecoration: "none" }}><Button
         className="login_button"
         style={{
           borderWidth: "3px",
@@ -31,15 +33,12 @@ export default function NaveBar() {
           fontWeight: "bold",
           fontSize: "17px",
           justifyContent: "center",
-          alignItems: "center",
+          alignItems: "center"
         }}
         variant="outlined"
       >
         LOGIN
       </Button></Link>
-      <Routes>
-        <Route path="Login" component={Login}></Route>
-      </Routes>
       </nav>
     </Fragment>
   );
