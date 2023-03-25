@@ -1,0 +1,99 @@
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/*config carrosel */
+
+.movieRow--list{
+    transition: all ease 0.5s;
+}
+
+.movieRow--listarea{
+    overflow-x: hidden;
+}
+
+.movieRow--item{
+    transform: scale(0.9);
+    display: inline-block;
+    width: 125px;
+    height: 180px;
+    transition: all 0.5s;
+}
+
+.movieRow--left, .movieRow--right{
+    transform: scale(0.9);
+    position: absolute;
+    width: 40px;
+    height: 180px;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow-x: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.movieRow--left{
+    left: 0;
+}
+
+.movieRow--right{
+    right: 0;
+}
+
+.modal-overlay{
+        position: fixed;
+        background-Color: rgb(0,0,0,0.7);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 15
+}
+
+.modal-content{
+    max-width: 50%;
+    max-height: 90%;
+    padding: 0;
+    border-radius: 20px;
+    border: none;
+}
+
+p{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5%;
+    padding-top: 0px;
+    margin: 0;
+    font-size: 12px;
+    text-align: justify;
+}
+
+h2{
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.movieRow--item:hover{
+    transform: scale(1);
+}
+
+.lista:hover .movieRow--left,
+.lista:hover .movieRow--right{
+    opacity: 1;
+}
+
+.modal--close{
+    position: fixed;
+    top: 10%;
+    right: 27%;
+}
