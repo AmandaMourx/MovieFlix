@@ -30,7 +30,8 @@ export default function NaveBar() {
           fontWeight: "bold",
           fontSize: "17px",
           justifyContent: "center",
-          alignItems: "center"
+          alignItems: "center",
+          marginLeft: '0%'
         }}
         variant="outlined"
       >
