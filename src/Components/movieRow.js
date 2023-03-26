@@ -1,10 +1,8 @@
 import React, {useState} from "react";
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore'
 import NavigateNextIcon from '@material-ui/icons/NavigateNext'
-import Modal from "react-modal";
-import MovieContent from "./movieContent.js"
-import CancelIcon from '@material-ui/icons/Cancel';
-import '../Styles/movieRow.css';
+import MovieContent from "./ModalContent.js"
+import './movieRow.css';
 
 export default ({title, items}) => {
     const [scrollx, setScrollx] = useState(0)
@@ -63,10 +61,12 @@ export default ({title, items}) => {
                 </div>
             </div>
 
-            <Modal isOpen = {isOpen} onRequestClose = {closeModal} contentLabel= "movie-info" overlayClassName= "modal-overlay" className= "modal-content">
+            <MovieContent open={isOpen} movie = {movieSelect} onClose={()=> setIsOpen(false)}/>
+
+            {/* <Modal isOpen = {isOpen} onRequestClose = {closeModal} contentLabel= "movie-info" overlayClassName= "modal-overlay" className= "modal-content">
                 <MovieContent movie={movieSelect} onClick = {() => closeModal()}/>
                 <CancelIcon className="modal--close" onClick={closeModal}/>
-            </Modal>
+            </Modal> */}
         </div>
     )
 }
