@@ -5,8 +5,6 @@ import MovieCard from '../Components/MovieCard';
 import NaveBar from "../Components/NaveBar";
 import "../Styles/MoviesCateg.css";
 
-import BotaoVoltar from "../Components/BotaoVoltar";
-
 function MoviesAction(items) {
   const APIURL = "https://api.themoviedb.org/3/discover/movie?with_genres=28&language=pt-BR&api_key=84c2e94e58561d2845fbf2de10a1a1a5";
 
