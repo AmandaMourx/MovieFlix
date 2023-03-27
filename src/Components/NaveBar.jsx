@@ -1,28 +1,48 @@
 import { Fragment, React } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 import "../Styles/NaveBar.css";
 import Button from "@mui/material/Button";
 import SearchAppBar from "./SearchBar";
 
 export default function NaveBar() {
+  const navigate = useNavigate();
+
+  const changeUrlAction = () => {
+    navigate('/MoviesAction');
+    
+  }
+
+  const changeUrlHorror = () => {
+    navigate('/MoviesHorror')
+  }
+
+  const changeUrlComedy = () => {
+    navigate('/MoviesComedy')
+  }
+
+  const changeUrlLogin = () => {
+    navigate('/login')
+  }
+  
   return (
     <Fragment>
-      <nav fullwidth>
+      <nav>
         <Link to='/' style={{ color: '#fffff'}}>
           <div className="main_name">MovieFlix</div>
         </Link>
-        <div class="links">
-          <ul class="categories">
-            <Link to='MoviesAction' style={{ color: "#fff", marginRight: '20%', textDecoration: 'none'}}><li>Ação</li></Link>
-            <Link to='MoviesHorror' style={{ color: '#fff', marginRight: '20%', textDecoration: 'none'}}><li>Terror</li></Link>
-            <Link to='MoviesComedy' style={{ color: '#fff', marginRight: '20%', textDecoration: 'none'}}><li>Comédia</li></Link>
+        <div className="links">
+          <ul className="categories">
+            <li style={{ color: "#fff", marginRight: '20%', textDecoration: 'none'}} onClick={changeUrlAction}>Ação</li>
+            <li style={{ color: '#fff', marginRight: '20%', textDecoration: 'none'}} onClick={changeUrlHorror}>Terror</li>
+            <li style={{ color: '#fff', marginRight: '20%', textDecoration: 'none'}} onClick={changeUrlComedy}>Comédia</li>
           </ul>
         </div>
         <div className="search">
           <SearchAppBar />
         </div>
-        <Link to="login" style={{ textDecoration: "none" }}><Button
+        <Button
         className="login_button"
+        onClick={changeUrlLogin}
         style={{
           borderWidth: "3px",
           borderColor: "white",
@@ -31,12 +51,13 @@ export default function NaveBar() {
           fontSize: "17px",
           justifyContent: "center",
           alignItems: "center",
-          marginLeft: '0%'
+          marginLeft: '0%',
+          textDecoration: "none",
         }}
         variant="outlined"
       >
         LOGIN
-      </Button></Link>
+      </Button>
       </nav>
     </Fragment>
   );
