@@ -30,8 +30,14 @@ function MoviesAction(items) {
       <div className="navbar">
         <NaveBar />
       </div>
-      <div className="titleCategorie">Filmes de Ação</div>
       <BotaoVoltar />
+      <div className="titleCategorie">Filmes de Ação</div>
+      <div className="movies">
+        {moviesAction.map((moviesAction) => (
+          <MovieCard {...moviesAction} />
+        ))}
+      </div>
+
       <div className="movies">
         {moviesAction.map((moviesAction) => (
         <div className="movie-item">
