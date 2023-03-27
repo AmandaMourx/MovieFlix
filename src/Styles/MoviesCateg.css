@@ -1,20 +1,4 @@
-.movie_card{
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-}
-.all_info{
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 15em;
-    margin-left: 2rem;
-    margin-right: 1.5em;
-    margin-bottom: 3em;
-    align-items:center;
-    justify-items: center;
-}
+
 .navbar{
     margin-bottom: 12%;
 }
@@ -30,10 +14,7 @@
     padding: 0% 5% 7% 5%;
     margin-top: 0%;
 }
-.poster img{
-    width: 15em;
-    align-items: center;
-}
+
 .all_info .title_movies{
     font-size: 15px;
     padding: 5% 0% 0% 0%;
@@ -42,4 +23,23 @@
     font-weight: bold;
     font-family: 'Climate Crisis', cursive;
     font-family: 'Josefin Sans', sans-serif;
+}
+
+.movies{
+    margin-left: 3%;
+    justify-content: center;
+    align-items: center
+}
+
+.movie-item{
+    display: inline-block;
+    height: 300px;
+    width: 180px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+
+.poster{
+    height: 280px;
+    margin-bottom: 20px;
 }
