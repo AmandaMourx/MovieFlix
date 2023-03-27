@@ -1,4 +1,21 @@
-
+.movie_card{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0.3em;
+}
+.all_info{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 15em;
+    margin-left: 2rem;
+    margin-right: 1.5em;
+    margin-bottom: 3em;
+    align-items:center;
+    justify-items: center;
+}
 .navbar{
     margin-bottom: 12%;
 }
@@ -13,6 +30,10 @@
     color: #ffffff;
     padding: 0% 5% 7% 5%;
     margin-top: 0%;
+}
+.poster img{
+    width: 15em;
+    align-items: center;
 }
 
 .all_info .title_movies{
