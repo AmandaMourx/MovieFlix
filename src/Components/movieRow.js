@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore'
 import NavigateNextIcon from '@material-ui/icons/NavigateNext'
 import MovieContent from "./ModalContent.js"
-import './movieRow.css';
+import '../Styles/movieRow.css';
 
 export default ({title, items}) => {
     const [scrollx, setScrollx] = useState(0)
@@ -29,7 +29,7 @@ export default ({title, items}) => {
 
     const handleRightArrow = () => {
         let x = scrollx - Math.round(window.innerWidth/2);
-        let listW = items.results.length * 125;
+        let listW = items.results.length * 180;
         if((window.innerWidth - listW) > x){
             x = (window.innerWidth - listW);
         }
@@ -51,7 +51,7 @@ export default ({title, items}) => {
             <div className="movieRow--listarea">
                 <div className="movieRow--list" style={{
                     marginLeft: scrollx,
-                    width: items.results.length * 125
+                    width: items.results.length * 180
                     }}>
                     {items.results.length > 0 && items.results.map((item, key) =>(
                         <div key={key} className="movieRow--item">
