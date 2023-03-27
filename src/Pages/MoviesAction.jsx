@@ -1,5 +1,7 @@
 import React, { Fragment, useEffect, useState } from "react";
-import MovieContent from "../Components/ModalContent.js"
+import MovieContent from "../Components/ModalContent.js";
+import BotaoVoltar from '../Components/BotaoVoltar';
+import MovieCard from '../Components/MovieCard';
 import NaveBar from "../Components/NaveBar";
 import "../Styles/MoviesCateg.css";
 
