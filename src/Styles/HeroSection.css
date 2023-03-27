@@ -1,9 +1,12 @@
+.hero-section{
+  margin-bottom: 0em;
+}
 .title {
   font-style: bold;
   font-weight: 700;
   font-family: "Climate Crisis", cursive;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 80px;
+  font-size: 100px;
   line-height: 97px;
 
   color: #ffffff;
@@ -15,9 +18,9 @@
   font-family: "Josefin Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 50px;
   line-height: 36.31px;
-  padding: 0% 5% 0%;
+  padding: 1% 5% 0%;
   width: fit-content;
   text-align: left;
   margin-top: -12%;
@@ -28,14 +31,14 @@
   font-family: "Josefin Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 50px;
   line-height: 36.31px;
-  padding: 0% 5% 0%;
+  padding: 1% 5% 0%;
   width: fit-content;
   text-align: left;
 }
 
 .home_image {
-  transform: translateY(-25em);
-  scale:calc(0.6);
+  transform: translateY(-22em);
+  scale:calc(0.5);
 }
