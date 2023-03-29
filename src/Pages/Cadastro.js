@@ -1,18 +1,16 @@
 import React, {useState} from 'react'
 import '../Styles/Login.css'
 import '../Styles/Login.css'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Cadastro = (props) => {
   
   const [email,setEmail] = useState("");
   const [usuario,setUsuario] = useState("");
   const [senha,setSenha] = useState("");
-  const navigate =useNavigate();
   const handleSignup = (e) => {
     e.preventDefault();
     console.log(email);
-    navigate("/login");
   };
 
   return (
