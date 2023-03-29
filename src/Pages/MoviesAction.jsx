@@ -32,12 +32,7 @@ function MoviesAction(items) {
       </div>
       <BotaoVoltar />
       <div className="titleCategorie">Filmes de Ação</div>
-      <div className="movies">
-        {moviesAction.map((moviesAction) => (
-          <MovieCard {...moviesAction} />
-        ))}
-      </div>
-
+    
       <div className="movies">
         {moviesAction.map((moviesAction) => (
         <div className="movie-item">
