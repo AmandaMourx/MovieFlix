@@ -1,6 +1,5 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import BotaoVoltar from '../Components/BotaoVoltar';
-import MovieCard from '../Components/MovieCard';
 import MovieContent from "../Components/ModalContent.js"
 import NaveBar from '../Components/NaveBar';
 import '../Styles/MoviesCateg.css';
@@ -32,13 +31,7 @@ function MoviesComedy () {
       </div>
       <BotaoVoltar />
       <div className='titleCategorie'>Filmes de comédia</div>
-    
-      <div className='movies'>
-        {moviesComedy.map((moviesComedy) => 
-          <MovieCard {...moviesComedy}/>
-        )}
-      </div>
-
+   
       <div className="movies">
         {moviesComedy.map((moviesComedy) => (
         <div className="movie-item">
