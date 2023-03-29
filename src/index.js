@@ -6,6 +6,7 @@ import Cadastro from './Pages/Cadastro';
 import MeuPerfil from './Pages/MeuPerfil'
 import Postagens from './Pages/Postagens';
 
+import SeachPage from './Pages/SeachPage';
 import MoviesAction from './Pages/MoviesAction';
 import MoviesHorror from './Pages/MoviesHorror';
 import MoviesComedy from './Pages/MoviesComedy';
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
   {
     path: '/postagens',
     element: <Postagens />
+  },
+  {
+    path: 'search-page',
+    element: <SeachPage/>
   },
 ])
 
