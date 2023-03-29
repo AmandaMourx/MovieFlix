@@ -1,5 +1,5 @@
 .hero-section{
-  margin-bottom: 0em;
+  margin-top: 12em;
 }
 .title {
   font-style: bold;
@@ -23,7 +23,7 @@
   padding: 1% 5% 0%;
   width: fit-content;
   text-align: left;
-  margin-top: -12%;
+  margin-top: -5%;
 }
 
 .subtitle2 {
