@@ -3,7 +3,8 @@ import { styled, alpha } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import InputBase from '@mui/material/InputBase';
-import SearchIcon from '@material-ui/icons/Search';;
+import SearchIcon from '@material-ui/icons/Search';
+import { useState } from 'react';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -48,6 +49,18 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 export default function SearchAppBar() {
+  const [search, setSearch] = useState("");
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(search)
+    if(!search) return
+
+    navigate(`/search-page?q=${search}`);
+    setSearch('');
+  };
+  
   return (
     <Box sx={{ flexGrow: 5 }}>
         <Toolbar  style={{ backgroundColor: 'transparent'}}>
@@ -55,10 +68,14 @@ export default function SearchAppBar() {
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
+            <form className="form-search-page" onSubmit={handleSubmit}>
             <StyledInputBase
               placeholder="Pesquisar…"
-              inputProps={{ 'aria-label': 'search' }}
+              inputProps={{ "aria-label": "Pesquisar" }}
+              onChange={(e) => setSearch(e.target.value)}
+              value={search}
             />
+          </form>
           </Search>
         </Toolbar>
     </Box>
