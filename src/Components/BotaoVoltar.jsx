@@ -1,5 +1,5 @@
 import { Button } from "@mui/material";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import { useNavigate } from "react-router-dom";
 
 export default function BotaoVoltar() {
