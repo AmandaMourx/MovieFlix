@@ -6,9 +6,6 @@ import NaveBar from "../Components/NaveBar";
 import BotaoVoltar from "../Components/BotaoVoltar";
 import MovieContent from "../Components/ModalContent.js"
 
-const API_KEY = "84c2e94e58561d2845fbf2de10a1a1a5";
-const SEARCH_URL = "https://api.themoviedb.org/3/search/movie";
-
 function SeachPage() {
   const [searchParams] = useSearchParams();
   const [movieSearch, setMovieSearch] = useState([]);
