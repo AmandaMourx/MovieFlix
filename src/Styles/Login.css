@@ -24,9 +24,10 @@ body{
 .login--input{
     display: block;
     background-color: rgba(0 ,0 , 0,0);
-    height: 25px;
+    height: 40px;
     width: 90%;
-    border: 1.5px solid #FFFFFF;
+    font-size: 22px;
+    border: 2px solid #FFFFFF;
     border-radius: 5px;
     margin-left: 5%;
     margin-right: 5%;
@@ -59,15 +60,15 @@ input:focus {
 
 .title{
     margin-top: 1%;
-    margin-bottom: 7%; 
+    font-size: 60px;
 }
 
 .login--button{
     background-color: transparent;
-    border: 1.5px solid #FFFFFF;
+    border: 2px solid #FFFFFF;
     padding: 3px 8px 2px 8px;
     color: white;
-    font-size: 12px;
+    font-size: 22px;
     border-radius: 5px;
     transition: all 0.5s;
 }
@@ -86,6 +87,29 @@ button:hover{
 }
 
 .login--enter{
-    margin-top: 2%;
+    margin-top: 6%;
     margin-bottom: 3%;
 }
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .divider hr {
+    flex: 1;
+    border: none;
+    height: 1.5px;
+    background-color: white;
+  }
+
+  .divider span {
+    margin: 0 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+  }
