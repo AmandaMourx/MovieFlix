@@ -1,7 +1,6 @@
 import { Fragment, React } from "react";
 import { Link, useNavigate} from "react-router-dom";
 import "../Styles/NaveBar.css";
-import Button from "@mui/material/Button";
 import SearchAppBar from "./SearchBar";
 
 export default function NaveBar() {
@@ -30,21 +29,27 @@ export default function NaveBar() {
         <Link to='/' style={{ color: '#fffff'}}>
           <div className="main_name">MovieFlix</div>
         </Link>
-        <div className="links">
-          <ul className="categories">
-            <li style={{ color: "#fff", marginRight: '20%', textDecoration: 'none'}} onClick={changeUrlAction}>Ação</li>
-            <li style={{ color: '#fff', marginRight: '20%', textDecoration: 'none'}} onClick={changeUrlHorror}>Terror</li>
-            <li style={{ color: '#fff', marginRight: '20%', textDecoration: 'none'}} onClick={changeUrlComedy}>Comédia</li>
-          </ul>
-        </div>
-        <div className="search">
-          <SearchAppBar />
-        </div>
-        <Button
+
+        
+          <div className="links">
+            <ul className="categories">
+              <li style={{ color: "#fff", marginRight: '20%', textDecoration: 'none'}} onClick={changeUrlAction}>Ação</li>
+              <li style={{ color: '#fff', marginRight: '20%', textDecoration: 'none'}} onClick={changeUrlHorror}>Terror</li>
+              <li style={{ color: '#fff', marginRight: '20%', textDecoration: 'none'}} onClick={changeUrlComedy}>Comédia</li>
+            </ul>
+          </div>
+
+          <div className="principal">
+          <div className="search">
+            <SearchAppBar />
+          </div>
+        
+
+        <button
         className="login_button"
         onClick={changeUrlLogin}
         style={{
-          borderWidth: "3px",
+          borderWidth: "2px",
           borderColor: "white",
           color: "white",
           fontWeight: "bold",
@@ -54,10 +59,11 @@ export default function NaveBar() {
           marginLeft: '0%',
           textDecoration: "none",
         }}
-        variant="outlined"
+
       >
         LOGIN
-      </Button>
+      </button>
+      </div>
       </nav>
     </Fragment>
   );
