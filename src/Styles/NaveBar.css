@@ -44,11 +44,33 @@ nav {
 .categories li{
   justify-content: space-between;
   margin-right: 0%; 
-  font-size:  22px;
-  
+  font-size:  25px;
+  transform: scale(0.9);
+  transition: all 0.5s;
 }
 .categories li:hover{
+  transform: scale(1);
   transition: .3s;
-  font-size: 25px;
   cursor: pointer;
+}
+
+.search{
+  margin-left: 20px;
+}
+
+.principal {
+  display: flex;
+}
+
+.login_button{
+  height: 39px;
+  margin-top: 12.5px;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
 }
