@@ -16,7 +16,7 @@ const Cadastro = (props) => {
   return (
     <div className='login--page'>
     <div className='login--container'>
-        <h2>Criar conta</h2>
+        <h2 className='title'>Criar conta</h2>
         <form lassName="register-form" onSubmit={handleSignup}>
         <input 
         value={email}

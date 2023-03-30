@@ -16,7 +16,7 @@ const Login =  (props) => {
     <div className='login--page'>
       
       <div className='login--container'>
-          <h2>Entrar</h2>
+          <h2 className='title'>Entrar</h2>
           <form onSubmit={submit}>
           <input value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -32,7 +32,11 @@ const Login =  (props) => {
             ></input>
           </form>
           <button className='login--button login--enter' onClick={submit}>Entrar</button>
-            <h3>Ou</h3>
+          <div class="divider">
+          <hr/>
+          <span>OU</span>
+          <hr/>
+          </div>
           <Link to="/cadastro"><button className='login--button login--new' >Criar nova conta</button></Link>
       </div>
 
