@@ -17,6 +17,12 @@ import{
   createBrowserRouter, RouterProvider
 } from "react-router-dom";
 
+const Private = ({ Item }) => {
+  const signed = useAuth();
+
+  return signed > 0 ? <Item /> : <Login />;
+}
+
 const router = createBrowserRouter([
   {
     path: '/',
