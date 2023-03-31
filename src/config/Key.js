@@ -1,0 +1,1 @@
+export const APIKey = «sua chave da API»
