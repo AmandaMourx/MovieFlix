@@ -7,7 +7,7 @@ import Hero from '../Components/HeroSection';
 import '../Styles/HeroSection.css'
 import { Outlet } from 'react-router-dom';
 
-function App() {
+function HomeLogado() {
   
   const [movieList, setMovieList] = useState([]);
 
@@ -37,4 +37,4 @@ function App() {
   );
 }
 
-export default App;
+export default HomeLogado;
