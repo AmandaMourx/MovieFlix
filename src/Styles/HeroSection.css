@@ -1,5 +1,6 @@
 .hero-section{
   margin-top: 12em;
+  height: 1100px;
 }
 .title {
   font-style: bold;
@@ -20,10 +21,10 @@
   font-weight: 400;
   font-size: 50px;
   line-height: 36.31px;
-  padding: 7% 5% 0%;
+  padding: 1% 5% 0%;
   width: fit-content;
   text-align: left;
-  margin-top: -5%;
+  margin-top: -20px;
 }
 
 .subtitle2 {

@@ -74,3 +74,9 @@ nav {
   padding-left: 7px;
   padding-right: 7px;
 }
+
+.login---button{
+  margin-top: 15px;
+  height: 39px;
+  width: 39px;
+}
