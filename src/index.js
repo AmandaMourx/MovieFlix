@@ -10,6 +10,7 @@ import SeachPage from './Pages/SeachPage';
 import MoviesAction from './Pages/MoviesAction';
 import MoviesHorror from './Pages/MoviesHorror';
 import MoviesComedy from './Pages/MoviesComedy';
+import Home from './Pages/HomeLogado'
 
 // 1 - configurando o router
 import{
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
   {
     path: 'search-page',
     element: <SeachPage/>
+  },
+  {
+    path: 'home',
+    element: <Home/>
   },
 ])
 
