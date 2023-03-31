@@ -40,6 +40,6 @@
 }
 
 .home_image {
-  transform: translateY(-22em);
+  transform: translateY(-21em);
   scale:calc(0.5);
 }
