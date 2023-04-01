@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Styles/Perfil.css'
-import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
+import BotaoVoltar from '../Components/BotaoVoltar';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 
 export default function MeuPerfil() {
@@ -8,7 +8,9 @@ export default function MeuPerfil() {
     <div className='perfil--page'>
       <div className='perfil--container'>
         <div className='perfil--left'>
-          <KeyboardBackspaceIcon style={{marginLeft: '-10rem', fontSize:'2rem'}}/><br></br>
+          <div className='botao-voltar'>
+            <BotaoVoltar />
+          </div>
           <AccountCircleIcon className='icon-cont' style={{fontSize: '12rem'}}/>  
           <h3>Minhas informações</h3>
         </div>  
