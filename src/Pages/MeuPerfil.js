@@ -16,8 +16,8 @@ export default function MeuPerfil() {
     <div className='perfil--page'>
       <div className='perfil--container'>
         <div className='perfil--left'>
-          <div className='areavoltar'>
-            <KeyboardBackspaceIcon onClick={redirect} style={{marginLeft: '-10rem', fontSize:'2rem', }}/><br></br><p className='voltar'>IR PARA AREA LOGADA</p>
+         <div className='areavoltar' onClick={redirect}>
+            <KeyboardBackspaceIcon style={{marginLeft: '-10rem', fontSize:'2rem', }}/><br></br><p className='voltar'>IR PARA AREA LOGADA</p>
           </div>
           <AccountCircleIcon className='icon-cont' style={{fontSize: '12rem', marginTop: '10%', color: 'white'}}/>  
           <h3>Minhas informações</h3>
