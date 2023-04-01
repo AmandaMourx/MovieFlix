@@ -1,11 +1,13 @@
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import useAuth from "../hooks/useAuth";
+
 
 export default function BotaoLogOut() {
   const navigate = useNavigate();
 
-  const { signout } = useAuth(); 
+  const changeUrlAreaLivre = ()=>{
+    navigate('/')
+  }
 
   return (
     <>
@@ -18,13 +20,13 @@ export default function BotaoLogOut() {
           fontSize: "17px",
           justifyContent: "center",
           alignItems: "center",
-          marginLeft: "3%",
+          marginLeft: "83%",
           textDecoration: "none",
-          marginTop: "2%",
+          marginTop: "35%",
           marginBottom: "3%",
         }}
         variant="outlined"
-        onClick={() => [signout, navigate('/login')]}
+        onClick={changeUrlAreaLivre}
       >
         {" "}
          LOGOUT{" "}
