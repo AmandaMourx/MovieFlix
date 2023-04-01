@@ -32,7 +32,11 @@
 .perfil--right{
     width: 80%;
 }
-
+.botao-voltar{
+    align-items: center;
+    justify-content: center;
+    margin-right: 5%;
+}
 .perfil--data{
     display: flex;
     margin-left: 20px;
