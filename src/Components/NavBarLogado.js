@@ -24,6 +24,10 @@ export default function NaveBar() {
     navigate('/login')
   }
   
+  const changeUrlLista = () => {
+    navigate('/postagens')
+  }
+  
   return (
     <Fragment>
       <nav>
@@ -37,7 +41,7 @@ export default function NaveBar() {
               <li style={{ color: "#fff", marginRight: '20%', textDecoration: 'none'}} onClick={changeUrlAction}>Ação</li>
               <li style={{ color: '#fff', marginRight: '20%', textDecoration: 'none'}} onClick={changeUrlHorror}>Terror</li>
               <li style={{ color: '#fff', marginRight: '20%', textDecoration: 'none'}} onClick={changeUrlComedy}>Comédia</li>
-              <li style={{ color: '#fff', marginRight: '20%', textDecoration: 'none'}} onClick={changeUrlComedy}>Listas</li>
+              <li style={{ color: '#fff', marginRight: '20%', textDecoration: 'none'}} onClick={changeUrlLista}>Listas</li>
             </ul>
           </div>
 
