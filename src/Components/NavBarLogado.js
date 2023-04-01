@@ -3,6 +3,7 @@ import { Link, useNavigate} from "react-router-dom";
 import "../Styles/NaveBar.css";
 import SearchAppBar from "./SearchBar";
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import BotaoMeuPerfil from "./BotaoMeuPerfil";
 
 export default function NaveBar() {
   const navigate = useNavigate();
@@ -18,10 +19,6 @@ export default function NaveBar() {
 
   const changeUrlComedy = () => {
     navigate('/MoviesComedy')
-  }
-
-  const changeUrlLogin = () => {
-    navigate('/login')
   }
   
   const changeUrlLista = () => {
@@ -52,6 +49,7 @@ export default function NaveBar() {
           </div>
 
         <AccountCircleIcon className="login---button" fontSize="large"/>
+        <BotaoMeuPerfil />
 
       </div>
       </nav>
