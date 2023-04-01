@@ -56,7 +56,7 @@ const router = createBrowserRouter([
     element: <SeachPage/>
   },
   {
-    path: 'home',
+    path: '/home',
     element: <HomeLogado/>
   },
 ])
