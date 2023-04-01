@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom' 
 import '../Styles/Perfil.css'
 import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
