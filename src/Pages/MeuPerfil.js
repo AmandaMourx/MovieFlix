@@ -3,6 +3,7 @@ import '../Styles/Perfil.css'
 import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import { useNavigate } from 'react-router-dom';
+import BotaoLogOut from '../Components/BotaoLogOut';
 
 export default function MeuPerfil() {
   
@@ -16,9 +17,9 @@ export default function MeuPerfil() {
       <div className='perfil--container'>
         <div className='perfil--left'>
           <div className='areavoltar'>
-            <KeyboardBackspaceIcon onClick={redirect} style={{marginLeft: '-10rem', fontSize:'2rem', }}/><br></br><p className='voltar'>Voltar para area logada</p>
+            <KeyboardBackspaceIcon onClick={redirect} style={{marginLeft: '-10rem', fontSize:'2rem', }}/><br></br><p className='voltar'>IR PARA AREA LOGADA</p>
           </div>
-          <AccountCircleIcon className='icon-cont' style={{fontSize: '12rem'}}/>  
+          <AccountCircleIcon className='icon-cont' style={{fontSize: '12rem', marginTop: '10%', color: 'white'}}/>  
           <h3>Minhas informações</h3>
         </div>  
         <div className='perfil--right'>
@@ -35,7 +36,7 @@ export default function MeuPerfil() {
             <p className='perfil--text'>Senha</p>
             <p className='perfil--text'>Senha</p>
           </div>
-          
+          <BotaoLogOut />
         </div>
           
       </div>
