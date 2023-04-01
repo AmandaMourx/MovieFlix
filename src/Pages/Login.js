@@ -6,14 +6,6 @@ import '../Styles/Login.css'
 
 const Login = () => {
   
-  const [email,setEmail] = useState("");
-  const [senha,setSenha] = useState("");
-  
-  const submit = (e) =>{
-      e.preventDefault();
-      console.log(email);
-  }
-  
   //trying to implement the user authentication
   
   /*
@@ -35,8 +27,15 @@ const Login = () => {
 
     navigate("/home");
   };
-    
   */
+  
+  const [email,setEmail] = useState("");
+  const [senha,setSenha] = useState("");
+  
+  const submit = (e) =>{
+      e.preventDefault();
+      console.log(email);
+  }
   
   return (
     <div className='login--page'>
