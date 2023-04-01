@@ -1,5 +1,4 @@
 import { Button } from "@mui/material";
-import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import { useNavigate } from "react-router-dom";
 
 export default function BotaoMeuPerfil() {
