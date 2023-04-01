@@ -57,4 +57,11 @@
     padding-top: 1px;
     padding-bottom: 30px;
 }
-
+.voltar{
+    align-items: center;
+    font-size: 12px;
+    margin-top: -13%;
+    margin-left: 19%;
+    margin-bottom: 0%;
+    justify-content: center;
+}
