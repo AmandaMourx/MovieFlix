@@ -58,7 +58,7 @@ const Login = () => {
             id="senha" senha="senha"
             ></input>
           </form>
-          <button className='login--button login--enter' onClick={submit}>Entrar</button>
+          <Link to="/meu-perfil"><button className='login--button login--enter'>Entrar</button></Link>
           <div className="divider">
           <hr />
           <span> </span>
@@ -75,3 +75,4 @@ const Login = () => {
 }
 
 export default Login;
+
