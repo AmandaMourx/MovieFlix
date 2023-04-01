@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+
 import App from './Pages/App';
 import Login from './Pages/Login';
 import Cadastro from './Pages/Cadastro';
@@ -16,12 +17,6 @@ import HomeLogado from './Pages/HomeLogado'
 import{
   createBrowserRouter, RouterProvider
 } from "react-router-dom";
-
-const Private = ({ Item }) => {
-  const signed = useAuth();
-
-  return signed > 0 ? <Item /> : <Login />;
-}
 
 const router = createBrowserRouter([
   {
