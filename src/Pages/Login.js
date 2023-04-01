@@ -60,7 +60,7 @@ const Login = () => {
             ></input>
           </form>
           <button className='login--button login--enter' onClick={submit}>Entrar</button>
-          <div class="divider">
+          <div className="divider">
           <hr />
           <span> </span>
           <h1>Não tem conta?</h1>
