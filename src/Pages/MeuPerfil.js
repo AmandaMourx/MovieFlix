@@ -1,16 +1,21 @@
 import React from 'react';
 import '../Styles/Perfil.css'
-import BotaoVoltar from '../Components/BotaoVoltar';
+import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import { useNavigate } from 'react-router-dom';
 
 export default function MeuPerfil() {
+  
+  const navigate = useNavigate();
+  const redirect = () => {
+    navigate('/home');
+  }
+  
   return (
     <div className='perfil--page'>
       <div className='perfil--container'>
         <div className='perfil--left'>
-          <div className='botao-voltar'>
-            <BotaoVoltar />
-          </div>
+          <KeyboardBackspaceIcon onClick={redirect} style={{marginLeft: '-10rem', fontSize:'2rem'}}/><br></br>
           <AccountCircleIcon className='icon-cont' style={{fontSize: '12rem'}}/>  
           <h3>Minhas informações</h3>
         </div>  
@@ -28,7 +33,6 @@ export default function MeuPerfil() {
             <p className='perfil--text'>Senha</p>
             <p className='perfil--text'>Senha</p>
           </div>
-          
           
         </div>
           
