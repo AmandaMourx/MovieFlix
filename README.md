@@ -8,7 +8,7 @@ Para executar o projeto MovieFlix, é necessário baixar os arquivos disponívei
 
 ### `npm install`
 
-Para conseguir executar os icons e outros elementos providos da biblioteca MUI, que utilizamos neste projeto, é preciso executar o código
+Caso haja algum erro em relação a importação dos icons e outros elementos providos da biblioteca MUI, que utilizamos neste projeto, é preciso executar o código
 
 ### `npm install @mui/icons-material @mui/material @emotion/styled @emotion/react`
 
